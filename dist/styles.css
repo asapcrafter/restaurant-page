@@ -12,30 +12,51 @@
     --dark-gray: #DCE1E3;
     --lapis: #39a0ca;
     --ice-blue: #a0d2eb;
+    --peach: #f3756b;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     background-color: var(--soft-lavender);
-    font-family: quasimoda;
+    font-family: "Raleway", sans-serif;
 }
 
 .header {
     width: 100%;
     height: 150px;
+    color: var(--peach);
+    display: flex;
+    justify-content: center;
 }
 
 .nav-wrapper {
     display: flex;
+    flex-wrap: nowrap;
+    flex: 1 0 67%;
+    align-items: center;
+    max-width: 1200px;
+    padding: 15px;
 }
 
 .logo {
     font-size: 55px;
 }
 .nav-container {
+    width: 350px;
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: right;
+    justify-content: flex-end;
     margin-left: 30px;
-    font-size: 30px;
+    font-size: 25px;
+}
+
+.nav-item {
+    margin-left: 25px;
+    cursor: pointer;
 }
 

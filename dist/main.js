@@ -1,8 +1,1 @@
-console.log("Testing webpack");
-
-content =  document.getElementById('content');
-
-var headline = document.createElement("div");
-    headline.setAttribute("id", "headline");
-    content.appendChild(headline);
-
+(()=>{"use strict";document.getElementById("home").onclick=function(){var e,t;e=document.querySelector("#content"),(t=document.createElement("div")).setAttribute("id","home-div"),t.setAttribute("class","stuff"),t.innerHTML="Im the home!",e.appendChild(t)},document.getElementById("menu").onclick=function(){var e,t;e=document.querySelector("#content"),(t=document.createElement("div")).setAttribute("id","menu-div"),t.setAttribute("class","stuff"),t.innerHTML="IM THE MENU!!!",e.appendChild(t)},document.getElementById("contact").onclick=function(){var e,t;e=document.querySelector("#content"),(t=document.createElement("div")).setAttribute("id","contact-div"),t.innerHTML="IM THE CONTACT!!!",e.appendChild(t)}})();
